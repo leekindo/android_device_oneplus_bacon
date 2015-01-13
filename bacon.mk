@@ -211,6 +211,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.qcom.bt.sh
 
+# Recovery
+PRODUCT_PACKAGES += \
+    librecovery_updater_bacon
+
 # Weather providers
 PRODUCT_PACKAGES += \
     OpenWeatherMapWeatherProvider \

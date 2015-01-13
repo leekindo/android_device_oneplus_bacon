@@ -165,6 +165,10 @@ TARGET_RIL_VARIANT := caf
 # Recovery
 TARGET_RECOVERY_FSTAB := $(PLATFORM_PATH)/rootdir/etc/fstab.bacon
 
+# Releasetools
+TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_bacon
+TARGET_RELEASETOOLS_EXTENSIONS := $(PLATFORM_PATH)
+
 # RPC
 TARGET_NO_RPC := true
 
