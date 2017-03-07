@@ -18,6 +18,25 @@
 # inherit from Oppo common
 -include device/oppo/common/BoardConfigCommon.mk
 
+# Uber Optimizations
+USE_CCACHE=1
+ENABLE_EXTRAGCC := true
+CLANG_O3 := true
+STRICT_ALIASING := true
+KRAIT_TUNINGS := true
+GRAPHITE_OPTS := true
+ENABLE_GCCONLY := true
+WITH_DEXPREOPT := true
+FFAST_MATH := true
+ENABLE_IPA_ANALYSER := true
+TARGET_USE_PIPE := true
+ENABLE_PTHREAD := true
+ENABLE_GOMP := true
+ENABLE_SANITIZE := true
+USE_O3_OPTIMIZATIONS := true
+ENABLE_MODULAR_O3_OPTIMIZATIONS := true
+TARGET_USE_QCOM_BIONIC_OPTIMIZATION := true
+
 PLATFORM_PATH := device/oneplus/bacon
 
 # Include path
@@ -55,7 +74,7 @@ TARGET_KERNEL_SOURCE := kernel/oneplus/msm8974
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
 
 # ANT+
-BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
+# BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := bacon,A0001
