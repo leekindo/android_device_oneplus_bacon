@@ -179,6 +179,12 @@ TARGET_RECOVERY_FSTAB := $(PLATFORM_PATH)/rootdir/etc/fstab.bacon
 # RPC
 TARGET_NO_RPC := true
 
+# TWRP Support - Optional
+ifeq ($(WITH_TWRP),true)
+WITH_SU := true
+-include device/oneplus/bacon/twrp.mk
+endif
+
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
 
