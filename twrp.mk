@@ -12,9 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-PRODUCT_COPY_FILES += \
-    device/oneplus/bacon/rootdir/etc/twrp.fstab:recovery/root/etc/twrp.fstab \
-
 RECOVERY_VARIANT := twrp
 TW_TARGET_USES_QCOM_BSP := false
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBA_8888"
