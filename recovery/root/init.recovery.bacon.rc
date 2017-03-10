@@ -53,10 +53,10 @@ on boot
     write /sys/devices/system/cpu/cpufreq/interactive/sampling_down_factor 100000
     write /sys/devices/system/cpu/cpufreq/interactive/timer_rate 30000
 
-    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 300000
-    write /sys/devices/system/cpu/cpu1/cpufreq/scaling_min_freq 300000
-    write /sys/devices/system/cpu/cpu2/cpufreq/scaling_min_freq 300000
-    write /sys/devices/system/cpu/cpu3/cpufreq/scaling_min_freq 300000
+    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 883200
+    write /sys/devices/system/cpu/cpu1/cpufreq/scaling_min_freq 883200
+    write /sys/devices/system/cpu/cpu2/cpufreq/scaling_min_freq 883200
+    write /sys/devices/system/cpu/cpu3/cpufreq/scaling_min_freq 883200
     chown root system /sys/devices/system/cpu/cpu1/online
     chown root system /sys/devices/system/cpu/cpu2/online
     chown root system /sys/devices/system/cpu/cpu3/online
@@ -67,8 +67,8 @@ on boot
     write /sys/module/msm_thermal/core_control/enabled 1
 
     write /sys/module/cpu_boost/parameters/boost_ms 20
-    write /sys/module/cpu_boost/parameters/sync_threshold 1728000
-    write /sys/module/cpu_boost/parameters/input_boost_freq 1497600
+    write /sys/module/cpu_boost/parameters/sync_threshold 2457600
+    write /sys/module/cpu_boost/parameters/input_boost_freq 1728000
     write /sys/module/cpu_boost/parameters/input_boost_ms 40
 
     write /sys/class/devfreq/qcom,cpubw.40/governor "cpubw_hwmon"
@@ -95,9 +95,6 @@ on property:recovery.perf.mode=0
     write /sys/devices/system/cpu/cpu3/online 1
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor "interactive"
     write /sys/module/msm_thermal/core_control/enabled 1
-    write /sys/devices/system/cpu/cpu1/online 0
-    write /sys/devices/system/cpu/cpu2/online 0
-    write /sys/devices/system/cpu/cpu3/online 0
 
 # used only for bringing up decrypt and keeping it around for future ref
 service logd /system/bin/logd
