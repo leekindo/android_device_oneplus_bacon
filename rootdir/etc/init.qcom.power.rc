@@ -45,11 +45,11 @@ on enable-low-power
     write /sys/kernel/cpu_input_boost/enabled 1
 
     write /sys/kernel/msm_thermal/enabled 0
-    write /sys/kernel/msm_thermal/zone0 "1728000 39 38"
-    write /sys/kernel/msm_thermal/zone1 "1497600 42 40"
-    write /sys/kernel/msm_thermal/zone2 "1497600 45 43"
-    write /sys/kernel/msm_thermal/zone3 "1267200 49 46"
-    write /sys/kernel/msm_thermal/zone4 "1267200 53 50"
+    write /sys/kernel/msm_thermal/zone0 "1958400 39 38"
+    write /sys/kernel/msm_thermal/zone1 "1728000 42 40"
+    write /sys/kernel/msm_thermal/zone2 "1728000 45 43"
+    write /sys/kernel/msm_thermal/zone3 "1497600 49 46"
+    write /sys/kernel/msm_thermal/zone4 "1497600 53 50"
     write /sys/kernel/msm_thermal/zone5 "1267200 56 54"
     write /sys/kernel/msm_thermal/zone6 "1267200 62 60"
     write /sys/kernel/msm_thermal/zone7 "1036800 79 75"
@@ -76,9 +76,9 @@ on charger
 on boot
     # Set light thermal restrictions while optimizing apps
     # [throttle_freq, throttle_temp, unthrottle_temp]
-    write /sys/kernel/msm_thermal/zone0 "1728000 45 43"
-    write /sys/kernel/msm_thermal/zone1 "1497600 50 47"
-    write /sys/kernel/msm_thermal/zone2 "1267200 55 53"
+    write /sys/kernel/msm_thermal/zone0 "1958400 45 43"
+    write /sys/kernel/msm_thermal/zone1 "1728000 50 47"
+    write /sys/kernel/msm_thermal/zone2 "1497600 55 53"
     write /sys/kernel/msm_thermal/enabled 1
 
 on property:sys.boot_completed=1
@@ -111,11 +111,11 @@ on property:sys.perf.profile=0
 
     # Set normal thermal restrictions
     write /sys/kernel/msm_thermal/enabled 0
-    write /sys/kernel/msm_thermal/zone0 "1728000 39 38"
-    write /sys/kernel/msm_thermal/zone1 "1497600 42 40"
-    write /sys/kernel/msm_thermal/zone2 "1497600 45 43"
-    write /sys/kernel/msm_thermal/zone3 "1267200 49 46"
-    write /sys/kernel/msm_thermal/zone4 "1267200 53 50"
+    write /sys/kernel/msm_thermal/zone0 "1958400 39 38"
+    write /sys/kernel/msm_thermal/zone1 "1728000 42 40"
+    write /sys/kernel/msm_thermal/zone2 "1728000 45 43"
+    write /sys/kernel/msm_thermal/zone3 "1497600 49 46"
+    write /sys/kernel/msm_thermal/zone4 "1497600 53 50"
     write /sys/kernel/msm_thermal/zone5 "1267200 56 54"
     write /sys/kernel/msm_thermal/zone6 "1267200 62 60"
     write /sys/kernel/msm_thermal/zone7 "1036800 79 75"
@@ -145,11 +145,11 @@ on property:sys.perf.profile=1
 
     # Set normal thermal restrictions
     write /sys/kernel/msm_thermal/enabled 0
-    write /sys/kernel/msm_thermal/zone0 "1728000 39 38"
-    write /sys/kernel/msm_thermal/zone1 "1497600 42 40"
-    write /sys/kernel/msm_thermal/zone2 "1497600 45 43"
-    write /sys/kernel/msm_thermal/zone3 "1267200 49 46"
-    write /sys/kernel/msm_thermal/zone4 "1267200 53 50"
+    write /sys/kernel/msm_thermal/zone0 "1958400 39 38"
+    write /sys/kernel/msm_thermal/zone1 "1728000 42 40"
+    write /sys/kernel/msm_thermal/zone2 "1728000 45 43"
+    write /sys/kernel/msm_thermal/zone3 "1497600 49 46"
+    write /sys/kernel/msm_thermal/zone4 "1497600 53 50"
     write /sys/kernel/msm_thermal/zone5 "1267200 56 54"
     write /sys/kernel/msm_thermal/zone6 "1267200 62 60"
     write /sys/kernel/msm_thermal/zone7 "1036800 79 75"
@@ -178,11 +178,11 @@ on property:sys.perf.profile=2
 
     # Set light thermal restrictions for performance mode
     write /sys/kernel/msm_thermal/enabled 0
-    write /sys/kernel/msm_thermal/zone0 "1728000 46 45"
-    write /sys/kernel/msm_thermal/zone1 "1497600 49 47"
-    write /sys/kernel/msm_thermal/zone2 "1497600 52 50"
-    write /sys/kernel/msm_thermal/zone3 "1267200 56 53"
-    write /sys/kernel/msm_thermal/zone4 "1267200 60 57"
+    write /sys/kernel/msm_thermal/zone0 "1958400 46 45"
+    write /sys/kernel/msm_thermal/zone1 "1728000 49 47"
+    write /sys/kernel/msm_thermal/zone2 "1728000 52 50"
+    write /sys/kernel/msm_thermal/zone3 "1497600 56 53"
+    write /sys/kernel/msm_thermal/zone4 "1497600 60 57"
     write /sys/kernel/msm_thermal/zone5 "1267200 63 61"
     write /sys/kernel/msm_thermal/zone6 "1267200 69 67"
     write /sys/kernel/msm_thermal/zone7 "1036800 80 76"
