@@ -216,10 +216,6 @@ PRODUCT_PACKAGES += \
     YahooWeatherProvider \
     WundergroundWeatherProvider
 
-# Widevine
-PRODUCT_PACKAGES += \
-    libshim_wvm
-
 # WiFi
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_cfg.dat:system/etc/firmware/wlan/prima/WCNSS_cfg.dat \
@@ -241,10 +237,6 @@ PRODUCT_PACKAGES += \
 
 # Call the proprietary setup
 $(call inherit-product, vendor/oneplus/bacon/bacon-vendor.mk)
-
-ifneq ($(QCPATH),)
-$(call inherit-product-if-exists, $(QCPATH)/prebuilt_HY11/target/product/msm8974/prebuilt.mk)
-endif
 
 # Inherit from oppo-common
 $(call inherit-product, device/oppo/common/common.mk)
