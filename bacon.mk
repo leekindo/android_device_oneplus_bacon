@@ -73,6 +73,10 @@ PRODUCT_PACKAGES += \
 $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-dalvik-heap.mk)
 $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-hwui-memory.mk)
 
+# Data
+PRODUCT_PACKAGES += \
+    librmnetctl
+
 # Display
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
@@ -209,6 +213,10 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     init.qcom.bt.sh
+
+# Recovery
+PRODUCT_PACKAGES += \
+    librecovery_updater_bacon
 
 # Weather providers
 PRODUCT_PACKAGES += \
