@@ -39,6 +39,8 @@ audio.offload.video=true
 audio.offload.multiple.enabled=false
 audio.offload.gapless.enabled=true
 audio.deep_buffer.media=true
+ro.config.vc_call_vol_steps=8
+ro.config.media_vol_steps=20
 
 mm.enable.smoothstreaming=true
 media.aac_51_output_enabled=true
